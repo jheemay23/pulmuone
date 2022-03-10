@@ -1,24 +1,19 @@
-:root {
-  --text-color: #333;
-  --main-color: #8DC63F;
+:root{
+    --text-color:#333;
+    --main-color:#8DC63F;
 }
-
-* {
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
 }
-
-ul {
-  list-style-type: none;
+body{
+    font-family: 'Noto Sans KR', sans-serif;
+    color: var(--text-color);
 }
-
-a {
-  text-decoration: none;
+ul{
+    list-style-type: none;
 }
-
-body {
-  font-family: 'Noto Sans KR', sans-serif;
-  color: var(--text-color);
-  background: #fff;
+a{
+    text-decoration: none;
 }

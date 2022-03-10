@@ -1,144 +1,110 @@
-/* mobile.css */
-body {
-  background: #fff;
+body{
 }
-
-/* pc전용 콘텐츠 비표시 */
-.pc-only {
-  display: none;
+#pc-only{
+    display: none;
 }
-
-.container {
-  width: 100%;
-  outline: 1px solid #ccc;
+.container{
+    width: 1440px;
+    margin: 0 auto;
+    outline: 1px solid #ccc;
 }
-
-#main-header {
-  position: relative;
-  width: 100%;
-  height: 70px;
-  display: flex;
-  align-items: center;
-  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
-  justify-content: center;
+#main-header{
+    width: 100%;
+    position: relative;
+    height: 70px;
+    display: flex;
+    justify-content: center;
+    /* justify-content: space-between; */
+    align-items: center;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
 }
-
-#main-header > h1 img {
-  width: 100px;
+#main-header>h1{
+    justify-content: center;
 }
-
-#gnb {
-  position: absolute;
-  background: #ddd;
-  width: 100%;
-  top: 70px;
-  padding: 20px 15px;
-  display: none;
+#main-header>h1>a> img{
+    width: 100px;
 }
-
-#gnb.on {
-  display: block;
-  z-index: 100;
+#gnb{
+    background-color: #ddd;
+    position: absolute;
+    width:100%;
+    top: 70px;
+    padding: 20px 15px;
+    display: none;
 }
-
-#gnb > ul {
+#gnb.on{
+display: block;
+z-index: 100;
 }
-
-/* 마지막 li를 제외한 li요소들 마진 추가 */
-#gnb > ul > li:not(:last-child) {
-  margin-bottom: 10px;
+#gnb>ul>li:not(:last-child){
+margin-bottom: 1.5em;
 }
-
-/* 
-#gnb > ul > li:last-child {
-  margin-bottom: 0px;
-} */
-
-#gnb > ul > li > a {
-  color: var(--text-color);
+#gnb>ul>li>a{
+    color: #333;
+    font-size: 18px;
 }
-
-#gnb > ul > li > a:hover {
-  color: var(--main-color);
+.rigth-menu{
+    display: flex;
 }
-
-.right-menu {
-  display: flex;
+#gnb-toggle-btn{
+    position: absolute;
+    right: 20px;
+    top: 20px;
+    border-style: none;
+    background-color: transparent;
 }
-
-#gnb-toggle-btn {
-  position: absolute;
-  top: 20px;
-  right: 15px;
-  border-style: none;
-  background-color: #fff;
+#gnb-toggle-btn:hover{
+    cursor: pointer;
 }
-
-#gnb-toggle-btn:hover {
-  cursor: pointer;
-}
-
-
-/* swiper slider */
 .swiper {
-  width: 100%;
-  height: calc(100vh - 70px);
-  background: #ccc;
-}
-
+    width: 100%;
+    height: calc(100vh - 70px);
+    background: #ccc;
+  }
 .swiper .swiper-slide.s1{
-  background-image: url(../images/main-visual01.jpg);
-  background-size: cover;
-  background-position: center;
+    background-image: url(../images/bg.jpg);
+    background-size: cover;
 }
-
 .swiper .swiper-slide.s2{
-  background-image: url(../images/main-visual02.jpg);
-  background-size: cover;
-  background-position: center;
+    background-image: url(../images/main--visual2.jpg);
+    background-size: cover;
 }
-
-.swiper .swiper-slide {
-  display: flex;
-  justify-content: center;
-  align-items: center;
+.swiper .swiper-slide{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
 }
-
-.swiper .swiper-slide .title {
-  transform: translateY(-100px);
+.title{
+    color: #fff;
+    text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.3);
+    transform: translateY(-50px);
 }
-
-.swiper .swiper-slide .title h2 {
-  font-size: 36px;
-  color: #fff;
-  text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+.title h2{ 
+    font-size: 36px;
+    font-weight: 500;
 }
-
-.swiper .swiper-slide .title h2 span {
-  font-size: 18px;
-  font-weight: normal;
+.title h2 span{
+    font-size: 24px;
+    font-weight: 400;
 }
-
 .swiper-button-prev,
-.swiper-button-next {
-  color: #fff;
-  display: none;
+.swiper-button-next{
+    color: #fff;
+    display: none;
 }
-
-.swiper-pagination-bullet {
-  border-radius: 0;
-  border: 2px solid rgba(255, 255, 255, 0.75);
-  width: 14px;
-  height: 14px;
-  background-color: transparent;
-  opacity: 1;
+.swiper-pagination-bullet{
+    width: 14px;
+    height: 14px;
+    border: 1.5px solid rgba(255, 255, 255, 0.905);
+    border-radius: 0;
+    background-color: transparent;
+    opacity: 1;
 }
-
-.swiper-pagination-bullet-active {
-  background: #fff;
-  opacity: 1;
+.swiper-pagination-bullet-active{
+    background-color: #fff;
+    opacity: 1;
 }
-
-.swiper-pagination {
-  bottom: 40px !important;
+.swiper-pagination{
+    bottom: 50px !important;
 }
